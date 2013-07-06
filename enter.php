@@ -13,7 +13,8 @@
 <body>
   <div class="container">
     <form id="entry">
-      <label class="inner">菜名</label>
+      <div class="content">
+        <label class="inner">菜名</label>
       <input type="text" name="name" id="name" placeholder="酸辣大白菜" class="input_height long_width" required />
 
       <label class="inner">单价</label>
@@ -39,8 +40,9 @@
         <option value="5">黑</option>
       </select>
       
-      <div>
-        <input type="submit" id="button_1"  class=""/>
+
+      <input type="submit" id="btn"  class="submitbtn"/>
+
       </div>
     </form>
   </div>
