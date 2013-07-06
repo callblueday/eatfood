@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  $(".order-item").click(function(){
-    $(".order-detail").toggle();
+  $(".order-item").click(function(e){
+    $(this).next().toggle();
   });
 
   $(".list-title").click(function(){

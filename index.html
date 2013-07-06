@@ -15,20 +15,108 @@
   <div class="container">
     <div id="wrap">
       <div id="welcome" class="pane">
-        欢迎进入eatfood！点餐时间开始！
-        <input type="button" value="下一步" class="button step1">
+        <div class="content">
+          <nav></nav>
+          <div class="eatinfo">
+            <div class="info">
+              <input type="num" class="person-num" step=1 min=1 required>
+              <input type="text" class="time">
+            </div>
+            <div class="btn">
+              <input type="button" class="reset">
+              <input type="button" class="step1">
+            </div>
+          </div>
+          <div class="person">
+        </div>
+        </div>
       </div> <!-- welcome ends --> 
 
       <div id="makeorder" class="pane">
-        开始点餐
-        <input type="button" value="上一步" class="button step2">
-        <input type="button" value="下一步" class="button step3">
-      </div> 
+        <div class="content">
+          <nav></nav>
+          <div class="order-detail">
+            <div class="autosend">
+              <div class="person"></div>  
+              <div class="car"></div>
+            </div>
+            <div class="order-list">
+              <ul>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <li class="order-item"></li>
+                <div class="clear"></div>
+              </ul>
+            </div>
+            <div class="myorder">
+              <div class="order-detail">
+                <div class="title">今日菜单</div>
+                <ul>
+                  <li class="myorder-item">
+                    <div class="order-name"></div>
+                    <div class="delete"></div>
+                  </li>
+                  <li class="myorder-item">
+                    <div class="order-name"></div>
+                    <div class="delete"></div>
+                  </li>
+                  <li class="myorder-item">
+                    <div class="order-name"></div>
+                    <div class="delete"></div>
+                  </li>
+                  <li class="myorder-item">
+                    <div class="order-name"></div>
+                    <div class="delete"></div>
+                  </li>
+                  <li class="myorder-item">
+                    <div class="order-name"></div>
+                    <div class="delete"></div>
+                  </li>
+                  <li class="myorder-item">
+                    <div class="order-name"></div>
+                    <div class="delete"></div>
+                  </li>
+                  <div class="clear"></div>
+                </ul>
+              </div>
+              <div class="order-state">
+                <div class="people"></div>
+                <div class="tip">今天的菜好像还不错哦!</div>
+              </div>
+            </div>
+          </div> <!-- orderdetail ends -->
+          <div class="btn">
+            <input type="button" class="return step2" value="1">
+            <input type="button" class="reset" value="1">
+            <input type="button" class="sub step3" value="2">
+          </div>
+        </div>
+      </div> <!-- makeorder ends --> 
 
       <div id="success" class="pane">
-        点餐完成
-        <input type="button" value="上一步" class="button step4">
-      </div>
+        <div class="content">
+          <nav></nav>
+          <input type="button" value="上一步" class="button step4">
+        </div>
+      </div> <!-- success ends --> 
     </div>
   </div>
 </body>

@@ -2,6 +2,9 @@ $(document).ready(function(){
 
   initLayout();
 
+  orderEvents();
+
+
   $(".step1").click(function(){
     setSmoothScroll('#makeorder')
   });
@@ -20,9 +23,8 @@ $(document).ready(function(){
 
   $(".step5").click(function(){
     
-  });
+  }); 
 
-  setInteractiveEvents
 });
 
 function setSmoothScroll(target) {
@@ -39,9 +41,29 @@ function setSmoothScroll(target) {
 }
 
 function initLayout() {
-  // console.log(document.body.offsetWidth + '-'+ 
-  //  document.body.offsetHeight);
-
     var w = document.body.offsetWidth + 'px';
     $(".pane").css("width", w);
+}
+
+function getInfo() {
+
+}
+
+function orderEvents() {
+  //order-item click events
+  $(".order-item").click(function(){
+    alert('niaho');
+  });
+
+  //auto-send
+  $(".autosend").click(function(){
+    alert("autosend");
+  });
+
+  // delete click events
+  $(".delete").click(function(){
+    alert("delete");
+  });
+
+
 }
