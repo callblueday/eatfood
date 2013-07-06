@@ -22,6 +22,7 @@ $(document).ready(function(){
     
   });
 
+  setInteractiveEvents
 });
 
 function setSmoothScroll(target) {
