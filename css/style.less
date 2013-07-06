@@ -1,20 +1,33 @@
 @import "base.less";
 
+html {
+   overflow: hidden;
+}
+
 .container {
   position: absolute;
-  margin-top: 30px;
+  margin: 30px 10px;
 
-  ul#wrap {
+  #wrap {
     width: 6000px;
 
-    li {
+    .pane {
       width: 800px;
       height: 550px;
       display: inline-block;
       float: left;
       .b;
     }
+
+    .button {
+      border: 1px solid #ccc;
+      width: 60px;
+      height: 30px;
+      cursor: pointer;
+    }
   }
+  
+  
 
   #welcome {
     
