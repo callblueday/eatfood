@@ -1,17 +1,26 @@
 @import "base.less";
 
 .container {
+  .tab{
+    float: left;
+    display: block;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
   .order-list {
+    clear:both;
 
     .order-item {
-
+      cursor: pointer;
     }
 
     .order-detail {
+      display: none;
       width: 300px;
       min-height: 100px;
       overflow: hidden;
-      .b;
 
       .food {
         float: left;
@@ -35,6 +44,14 @@
         }
       }
     }
+  }
+
+  .analysis-list {
+    display: none;
+    clear: both;
+    width: 100%;
+    height: 500px;
+    .b;
   }
   
 }
