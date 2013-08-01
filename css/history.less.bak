@@ -58,18 +58,18 @@
     .table{
       .food-pop{
 
-        .popfood, .downfood{
+        .popfood{
           float: left;
           min-width: 120px;
           margin-right: 5px;
           text-align: center;
         }
         .food-img {
-          width: 50px;
-          height: 50px;
+          width: 120px;
+          height: 120px;
           display: block;
           margin: 0 auto;
-          border-radius: 50px;
+          border-radius: 120px;
         }
 
         .food-tip {

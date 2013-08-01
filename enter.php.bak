@@ -16,15 +16,12 @@ $table_orderlist="orderlist";
 $table_orderdetail="orderdetail";
 $UID="byh0205";
 $KEY="d791c07ccdfbf255f253";
-//$smsMob="13291282213";//byh
-// $smsMob="18795880137,15105183121";//test
-// $smsMob="18795880137";//zm
+// $smsMob="13291282213";//byh
+ //$smsMob="15105183121"; //hjh
+$smsMob="13913974462";//利佳餐馆
+//$smsMob="18795880137";//zm
 //$smsMob="18707190159"; //pf
 //$smsMob="15800016566"; //ty
-//$smsMob="15105183121"; //hjh
-//$smsMob="15868724421"; //xb
-$smsMob="13913974462";//利佳餐馆
-
 $smsText="你好，我们中午来吃饭，点下面几个菜：";
 //$_POST["act"]==1----添加菜品 
 //$_POST["act"]==1----添加菜品

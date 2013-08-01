@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eatfood</title>
+  <title>Eatgoods</title>
   <divnk rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet/less" href="css/style.less">
   <script src="js/jquery-1.7.2.min.js"></script>
@@ -13,87 +13,257 @@
 </head>
 <body>
   <div class="container">
+    <nav></nav>
     <div id="wrap">
       <div id="welcome" class="pane">
         <div class="content">
-          <nav></nav>
           <div class="eatinfo">
             <div class="info">
-              <input type="num" class="person-num" step=1 min=1 required>
-              <input type="text" class="time">
+              <input type="text" class="person-num" required value= 10>
+              <input type="text" class="time" value="12:15">
             </div>
             <div class="btn">
               <input type="button" class="reset">
               <input type="button" class="step1">
             </div>
+            <a class="history-link" href="history.html">历史点餐记录</a>
+
+            <!-- <div class="restaurant">
+              <select name="eatsarea" class="eatsarea">
+                <option value=0>选择餐馆</option>
+                <option value=1>利佳餐馆1</option>
+                <option value=2>利佳餐馆2</option>
+                <option value=3>利佳餐馆3</option>
+                <option value=4>利佳餐馆4</option>
+              </select>
+              <input type="text" value="" class="tel" placeholder="+86">
+            </div>  -->
           </div>
-          <div class="person">
-        </div>
+
+          <div class="person"></div>
         </div>
       </div> <!-- welcome ends --> 
 
       <div id="makeorder" class="pane">
+        <div id="slideitem" style=" width:164px; height:35px; background-image:url(images/xiaokuang.png); position:fixed; opacity:1 ;z-index:10;"></div>
+
         <div class="content">
-          <nav></nav>
           <div class="order-detail">
             <div class="autosend">
               <div class="person"></div>  
               <div class="car"></div>
             </div>
             <div class="order-list">
-              <ul>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
-                <li class="order-item"></li>
+              <h3 class="order-title">大荤</h3>
+              <ul class="dahun">
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <div class="clear"></div>
+              </ul>
+              <h3 class="order-title">荤菜</h3>
+              <ul class="hun">
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <div class="clear"></div>
+              </ul>
+              <h3 class="order-title">素菜</h3>
+              <ul class="su">
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
+                <li class="order-item">
+                  <span class="order-name"></span>
+                  <span class="order-price"></span>
+                </li>
                 <div class="clear"></div>
               </ul>
             </div>
             <div class="myorder">
               <div class="order-detail">
                 <div class="title">今日菜单</div>
-                <ul>
-                  <li class="myorder-item">
-                    <div class="order-name"></div>
+                <ul class="order-detail-ul">
+                  <!--<li class="myorder-item">
+                    <span class="order-name"></span>
+                    <span class="order-price"></span>
                     <div class="delete"></div>
-                  </li>
-                  <li class="myorder-item">
-                    <div class="order-name"></div>
-                    <div class="delete"></div>
-                  </li>
-                  <li class="myorder-item">
-                    <div class="order-name"></div>
-                    <div class="delete"></div>
-                  </li>
-                  <li class="myorder-item">
-                    <div class="order-name"></div>
-                    <div class="delete"></div>
-                  </li>
-                  <li class="myorder-item">
-                    <div class="order-name"></div>
-                    <div class="delete"></div>
-                  </li>
-                  <li class="myorder-item">
-                    <div class="order-name"></div>
-                    <div class="delete"></div>
-                  </li>
+                  </li>-->
                   <div class="clear"></div>
                 </ul>
               </div>
@@ -107,14 +277,18 @@
             <input type="button" class="return step2" value="1">
             <input type="button" class="reset" value="1">
             <input type="button" class="sub step3" value="2">
+            <div class="nodish">先点菜呀~~</div>
           </div>
         </div>
-      </div> <!-- makeorder ends --> 
+
+        <div class="slideitem"></div>
+      </div> <!-- makeorder ends -->
 
       <div id="success" class="pane">
         <div class="content">
-          <nav></nav>
-          <input type="button" value="上一步" class="button step4">
+          <div class="success-msg">
+            <a class="button step4">返回首页</a>
+          </div>
         </div>
       </div> <!-- success ends --> 
     </div>

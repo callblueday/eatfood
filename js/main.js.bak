@@ -9,6 +9,7 @@ var analysisMark = {};
 analysisMark.su = 0;
 analysisMark.hun = 0;
 analysisMark.color = 0;
+var ni;
 
 $(document).ready(function(){
 
@@ -191,8 +192,6 @@ function buttonEvents() {
 
   $("#makeorder .reset").click(function(){
     $(".order-detail-ul").children().remove();
-    setTimeout(function(){
-      $(".tip").html("");},500);
   });
 
   //eats choose
